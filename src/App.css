@@ -6,8 +6,10 @@
  align-items: center;
 }
 
-.container{
-    
+.homeContainer{
+    display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .button-shrink {
