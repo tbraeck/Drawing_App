@@ -1,19 +1,17 @@
 import React from 'react'
-import Game from './Game'
-import {Link}
+// import Game from './Game'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
 
-    const playGame = () => {
-        return(
-            <link rel='' ></link>
-        )
-    }
+
 
   return (
     <div className='homeContainer'>
       <h1 className='h1'>This is home.</h1>
-      <button onClick={playGame}>PLAY</button>
+      <Link to={`/game`} className="link">
+            <button >PLAY</button>
+         </Link>
     </div>
   )
 }

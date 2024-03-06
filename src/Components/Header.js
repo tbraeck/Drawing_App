@@ -1,9 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 const Header = () => {
   return (
     <div style={{justifyContent: "center", alignItems: "center"}}>
-        <a href='http://localhost:4000/' className="logo"> <img src="/sketch_fast.gif" alt="header" style={{width: "600px"}} /></a> 
+       <Link to={`/`} className="link">
+            <img src="/sketch_fast.gif" alt="header" style={{width: "600px"}} />
+        </Link>
     </div>
   )
 }
