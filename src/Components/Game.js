@@ -2,6 +2,8 @@ import { ReactSketchCanvas } from "react-sketch-canvas";
 import { useRef, useState } from "react";
 import ColorPicker from "./ColorPicker"
 import Header from "./Header";
+import Timer from "./Timer";
+import DrawingIdeaGenerator from "./DrawingIdeaGenerator";
 
 const Game = () => {
    
@@ -53,7 +55,9 @@ const Game = () => {
           <div style={{justifyContent: "center", alignContent: "center"}}>
             <Header style={{justifyContent: "center", alignContent: "center"}}/>
           </div>
-       
+       <div>
+        <DrawingIdeaGenerator/>
+       </div>
         <div className="d-flex flex-column gap-2 p-2" style={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", width: "cover" }}>
           <div className="container" style={{ width: "cover", justifyContent: "left", marginRight: "60px" }}>
             <button
@@ -107,6 +111,9 @@ const Game = () => {
           </div>
           <div style={{ marginTop: "30px" }}>
             <ReactSketchCanvas ref={canvasRef} strokeColor={penColor} strokeWidth={brushSize} style={{ height: "500px", width: "800px", border: "5px", borderStyle: "solid", borderColor: "black", marginLeft: "1 50px" }} />
+          </div>
+          <div>
+            <Timer/>
           </div>
         </div>
     
